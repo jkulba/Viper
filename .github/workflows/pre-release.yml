@@ -37,9 +37,10 @@ jobs:
           git-branch: ${{ env.PR_BRANCH }}
           skip-git-pull: true
           output-file: false
+          pre-release: true
           version-file: ".github/version.json"
           create-summary: true
-
+          
       - name: Create Changelog PR
         if: steps.changelog.outputs.skipped == 'false'
         run: |
