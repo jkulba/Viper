@@ -40,7 +40,6 @@ jobs:
           pre-release: true
           version-file: ".github/version.json"
           create-summary: true
-          skip-bump: true
           
       - name: Create Changelog PR
         if: steps.changelog.outputs.skipped == 'false'
