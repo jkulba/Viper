@@ -1,4 +1,3 @@
 # Viper
 
 DotNet Template Project
-
